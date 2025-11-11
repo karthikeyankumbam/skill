@@ -15,7 +15,7 @@ NODE_ENV=production
 
 # MongoDB Atlas (Production)
 # Replace username, password, and cluster with your MongoDB Atlas credentials
-MONGODB_URI=mongodb+srv://karthike:62xcNjCZFuzYCkQB@cluster.mongodb.net/skilllink?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://karthike:karthik@cluster0.pzedxxe.mongodb.net/skilllink?retryWrites=true&w=majority
 
 # JWT
 JWT_SECRET=${JWT_SECRET}

@@ -39,6 +39,7 @@ eb create skilllink-backend-prod
 ### Step 3: Set Environment Variables
 ```bash
 # Use your MongoDB Atlas connection string from Prerequisites step 1
+# Generate secrets first: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 eb setenv \
   NODE_ENV=production \
   MONGODB_URI="mongodb+srv://username:password@cluster.mongodb.net/skilllink?retryWrites=true&w=majority" \
@@ -86,12 +87,17 @@ sudo npm install -g pm2
 ```bash
 # On EC2
 cd /var/www
-sudo git clone YOUR_REPO_URL skilllink-backend
+sudo git clone https://github.com/karthikeyankumbam/skill.git skilllink-backend
+sudo chown -R $USER:$USER /var/www/skilllink-backend
 cd skilllink-backend/backend
 npm install --production
 
+# Create uploads directory
+mkdir -p uploads
+chmod 755 uploads
+
 # Create .env with MongoDB Atlas connection string
-sudo nano .env
+nano .env
 # Add all environment variables (use MongoDB Atlas connection string from Prerequisites)
 
 # Start

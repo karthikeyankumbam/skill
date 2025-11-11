@@ -129,7 +129,7 @@ ssh -i your-key.pem ubuntu@your-ec2-ip
 ```bash
 # On EC2 instance
 cd ~
-wget https://raw.githubusercontent.com/your-repo/skill/main/backend/ec2-setup.sh
+wget https://raw.githubusercontent.com/karthikeyankumbam/skill/main/backend/ec2-setup.sh
 chmod +x ec2-setup.sh
 ./ec2-setup.sh
 ```
@@ -157,7 +157,7 @@ sudo apt-get install -y certbot python3-certbot-nginx
 ```bash
 # Clone your repository
 cd /var/www
-sudo git clone https://github.com/your-username/your-repo.git skilllink-backend
+sudo git clone https://github.com/karthikeyankumbam/skill.git skilllink-backend
 cd skilllink-backend/backend
 
 # Install dependencies
@@ -295,15 +295,15 @@ Create `.env` file or set in Elastic Beanstalk:
 ```bash
 NODE_ENV=production
 PORT=5000
-MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/skilllink
-JWT_SECRET=<generate_strong_secret>
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/skilllink?retryWrites=true&w=majority
+JWT_SECRET=<generate_strong_secret_32_chars_min>
 JWT_EXPIRE=7d
-OTP_SECRET=<generate_strong_secret>
+OTP_SECRET=<generate_strong_secret_32_chars_min>
 OTP_EXPIRE_MINUTES=10
 MAX_FILE_SIZE=3145728
 UPLOAD_PATH=./uploads
 CREDIT_VALUE_IN_RUPEES=10
-FRONTEND_URL=https://your-frontend-url.com
+FRONTEND_URL=http://your-ec2-ip:3000
 
 # Optional
 TWILIO_ACCOUNT_SID=...
@@ -313,10 +313,16 @@ RAZORPAY_KEY_ID=...
 RAZORPAY_KEY_SECRET=...
 ```
 
-**Generate secrets:**
+**Generate secrets (run on EC2):**
 ```bash
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
+Run this command twice to generate two different secrets for JWT_SECRET and OTP_SECRET.
+
+**Important:** 
+- Replace `username:password` with your MongoDB Atlas credentials
+- Replace `cluster.mongodb.net` with your actual cluster URL
+- Use your EC2 public IP for FRONTEND_URL if you don't have a domain yet
 
 ---
 
@@ -346,14 +352,15 @@ eb deploy
 
 ### EC2
 ```bash
-# On your local machine
-scp -i key.pem -r backend/ ubuntu@ec2-ip:/var/www/skilllink-backend
-
-# On EC2
-cd /var/www/skilllink-backend
+# On EC2 instance
+cd /var/www
+sudo git clone https://github.com/karthikeyankumbam/skill.git skilllink-backend
+sudo chown -R $USER:$USER /var/www/skilllink-backend
+cd skilllink-backend/backend
 npm install --production
 pm2 start server.js --name skilllink-backend
 pm2 save
+pm2 startup
 ```
 
 ---

@@ -1,0 +1,68 @@
+{
+  "common": {
+    "home": "హోమ్",
+    "login": "లాగిన్",
+    "logout": "లాగ్అవుట్",
+    "register": "నమోదు",
+    "profile": "ప్రొఫైల్",
+    "wallet": "వాలెట్",
+    "bookings": "బుకింగ్‌లు",
+    "search": "శోధించండి",
+    "filter": "ఫిల్టర్",
+    "submit": "సమర్పించండి",
+    "cancel": "రద్దు చేయండి",
+    "save": "సేవ్ చేయండి",
+    "edit": "సవరించండి",
+    "delete": "తొలగించండి",
+    "loading": "లోడ్ అవుతోంది...",
+    "error": "లోపం",
+    "success": "విజయం"
+  },
+  "home": {
+    "title": "స్థానిక నిపుణులను కనుగొనండి",
+    "subtitle": "మీ సేవా అవసరాల కోసం ధృవీకరించబడిన నిపుణులతో కనెక్ట్ అవండి",
+    "searchPlaceholder": "సేవల కోసం శోధించండి...",
+    "categories": "వర్గాలు",
+    "featured": "ఫీచర్డ్ నిపుణులు",
+    "topRated": "టాప్ రేటెడ్",
+    "nearMe": "నా దగ్గర"
+  },
+  "auth": {
+    "phone": "ఫోన్ నంబర్",
+    "otp": "OTP",
+    "sendOtp": "OTP పంపండి",
+    "verifyOtp": "OTP ధృవీకరించండి",
+    "name": "పేరు",
+    "email": "ఇమెయిల్",
+    "loginWithGoogle": "Googleతో లాగిన్ చేయండి",
+    "loginWithApple": "Appleతో లాగిన్ చేయండి"
+  },
+  "professional": {
+    "unlockProfile": "ప్రొఫైల్ అన్లాక్ చేయండి",
+    "bookNow": "ఇప్పుడే బుక్ చేయండి",
+    "contactLocked": "సంప్రదింపు వివరాలను వీక్షించడానికి లాగిన్ చేసి క్రెడిట్‌లతో అన్లాక్ చేయండి",
+    "rating": "రేటింగ్",
+    "reviews": "సమీక్షలు",
+    "experience": "అనుభవం",
+    "skills": "నైపుణ్యాలు",
+    "services": "సేవలు",
+    "pricing": "ధర"
+  },
+  "booking": {
+    "createBooking": "బుకింగ్ సృష్టించండి",
+    "serviceDate": "సేవా తేదీ",
+    "serviceTime": "సేవా సమయం",
+    "address": "చిరునామా",
+    "description": "వివరణ",
+    "totalAmount": "మొత్తం మొత్తం",
+    "confirm": "బుకింగ్ నిర్ధారించండి"
+  },
+  "wallet": {
+    "balance": "బ్యాలెన్స్",
+    "credits": "క్రెడిట్‌లు",
+    "addFunds": "ఫండ్‌లు జోడించండి",
+    "transactions": "లావాదేవీలు",
+    "insufficientCredits": "తగినంత క్రెడిట్‌లు లేవు"
+  }
+}
+

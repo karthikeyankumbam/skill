@@ -1,0 +1,68 @@
+{
+  "common": {
+    "home": "வீடு",
+    "login": "உள்நுழை",
+    "logout": "வெளியேற",
+    "register": "பதிவு",
+    "profile": "சுயவிவரம்",
+    "wallet": "பணப்பை",
+    "bookings": "முன்பதிவுகள்",
+    "search": "தேடு",
+    "filter": "வடிகட்டி",
+    "submit": "சமர்ப்பி",
+    "cancel": "ரத்து",
+    "save": "சேமி",
+    "edit": "திருத்து",
+    "delete": "நீக்கு",
+    "loading": "ஏற்றுகிறது...",
+    "error": "பிழை",
+    "success": "வெற்றி"
+  },
+  "home": {
+    "title": "உள்ளூர் தொழில்முறையாளர்களைக் கண்டறியவும்",
+    "subtitle": "உங்கள் அனைத்து சேவை தேவைகளுக்கும் சரிபார்க்கப்பட்ட தொழில்முறையாளர்களுடன் இணைக்கவும்",
+    "searchPlaceholder": "சேவைகளைத் தேடுங்கள்...",
+    "categories": "வகைகள்",
+    "featured": "முன்னிலை தொழில்முறையாளர்கள்",
+    "topRated": "முதன்மை மதிப்பீடு",
+    "nearMe": "எனக்கு அருகில்"
+  },
+  "auth": {
+    "phone": "தொலைபேசி எண்",
+    "otp": "OTP",
+    "sendOtp": "OTP அனுப்ப",
+    "verifyOtp": "OTP சரிபார்க்க",
+    "name": "பெயர்",
+    "email": "மின்னஞ்சல்",
+    "loginWithGoogle": "Google உடன் உள்நுழை",
+    "loginWithApple": "Apple உடன் உள்நுழை"
+  },
+  "professional": {
+    "unlockProfile": "சுயவிவரத்தை திற",
+    "bookNow": "இப்போது முன்பதிவு செய்",
+    "contactLocked": "தொடர்பு விவரங்களைப் பார்க்க உள்நுழைந்து கிரெடிட்களுடன் திறக்கவும்",
+    "rating": "மதிப்பீடு",
+    "reviews": "விமர்சனங்கள்",
+    "experience": "அனுபவம்",
+    "skills": "திறன்கள்",
+    "services": "சேவைகள்",
+    "pricing": "விலை"
+  },
+  "booking": {
+    "createBooking": "முன்பதிவு உருவாக்க",
+    "serviceDate": "சேவை தேதி",
+    "serviceTime": "சேவை நேரம்",
+    "address": "முகவரி",
+    "description": "விளக்கம்",
+    "totalAmount": "மொத்த தொகை",
+    "confirm": "முன்பதிவை உறுதிப்படுத்து"
+  },
+  "wallet": {
+    "balance": "இருப்பு",
+    "credits": "கிரெடிட்கள்",
+    "addFunds": "நிதி சேர்",
+    "transactions": "பரிவர்த்தனைகள்",
+    "insufficientCredits": "போதுமான கிரெடிட்கள் இல்லை"
+  }
+}
+

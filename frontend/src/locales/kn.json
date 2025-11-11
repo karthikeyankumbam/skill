@@ -1,0 +1,68 @@
+{
+  "common": {
+    "home": "ಮುಖಪುಟ",
+    "login": "ಲಾಗಿನ್",
+    "logout": "ಲಾಗ್ ಔಟ್",
+    "register": "ನೋಂದಣಿ",
+    "profile": "ಪ್ರೊಫೈಲ್",
+    "wallet": "ವಾಲೆಟ್",
+    "bookings": "ಬುಕಿಂಗ್‌ಗಳು",
+    "search": "ಹುಡುಕಿ",
+    "filter": "ಫಿಲ್ಟರ್",
+    "submit": "ಸಲ್ಲಿಸಿ",
+    "cancel": "ರದ್ದುಮಾಡಿ",
+    "save": "ಉಳಿಸಿ",
+    "edit": "ಸಂಪಾದಿಸಿ",
+    "delete": "ಅಳಿಸಿ",
+    "loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+    "error": "ದೋಷ",
+    "success": "ಯಶಸ್ಸು"
+  },
+  "home": {
+    "title": "ಸ್ಥಳೀಯ ವೃತ್ತಿಪರರನ್ನು ಹುಡುಕಿ",
+    "subtitle": "ನಿಮ್ಮ ಎಲ್ಲಾ ಸೇವಾ ಅವಶ್ಯಕತೆಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಿದ ವೃತ್ತಿಪರರೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ",
+    "searchPlaceholder": "ಸೇವೆಗಳಿಗಾಗಿ ಹುಡುಕಿ...",
+    "categories": "ವರ್ಗಗಳು",
+    "featured": "ವೈಶಿಷ್ಟ್ಯಗೊಳಿಸಿದ ವೃತ್ತಿಪರರು",
+    "topRated": "ಟಾಪ್ ರೇಟೆಡ್",
+    "nearMe": "ನನ್ನ ಬಳಿ"
+  },
+  "auth": {
+    "phone": "ಫೋನ್ ಸಂಖ್ಯೆ",
+    "otp": "OTP",
+    "sendOtp": "OTP ಕಳುಹಿಸಿ",
+    "verifyOtp": "OTP ಪರಿಶೀಲಿಸಿ",
+    "name": "ಹೆಸರು",
+    "email": "ಇಮೇಲ್",
+    "loginWithGoogle": "Google ನೊಂದಿಗೆ ಲಾಗಿನ್ ಮಾಡಿ",
+    "loginWithApple": "Apple ನೊಂದಿಗೆ ಲಾಗಿನ್ ಮಾಡಿ"
+  },
+  "professional": {
+    "unlockProfile": "ಪ್ರೊಫೈಲ್ ಅನ್ಲಾಕ್ ಮಾಡಿ",
+    "bookNow": "ಈಗ ಬುಕ್ ಮಾಡಿ",
+    "contactLocked": "ಸಂಪರ್ಕ ವಿವರಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಲಾಗಿನ್ ಮಾಡಿ ಮತ್ತು ಕ್ರೆಡಿಟ್‌ಗಳೊಂದಿಗೆ ಅನ್ಲಾಕ್ ಮಾಡಿ",
+    "rating": "ರೇಟಿಂಗ್",
+    "reviews": "ವಿಮರ್ಶೆಗಳು",
+    "experience": "ಅನುಭವ",
+    "skills": "ಕೌಶಲ್ಯಗಳು",
+    "services": "ಸೇವೆಗಳು",
+    "pricing": "ಬೆಲೆ"
+  },
+  "booking": {
+    "createBooking": "ಬುಕಿಂಗ್ ರಚಿಸಿ",
+    "serviceDate": "ಸೇವಾ ದಿನಾಂಕ",
+    "serviceTime": "ಸೇವಾ ಸಮಯ",
+    "address": "ವಿಳಾಸ",
+    "description": "ವಿವರಣೆ",
+    "totalAmount": "ಒಟ್ಟು ಮೊತ್ತ",
+    "confirm": "ಬುಕಿಂಗ್ ದೃಢೀಕರಿಸಿ"
+  },
+  "wallet": {
+    "balance": "ಬ್ಯಾಲೆನ್ಸ್",
+    "credits": "ಕ್ರೆಡಿಟ್‌ಗಳು",
+    "addFunds": "ನಿಧಿಗಳನ್ನು ಸೇರಿಸಿ",
+    "transactions": "ವಹಿವಾಟುಗಳು",
+    "insufficientCredits": "ಸಾಕಷ್ಟು ಕ್ರೆಡಿಟ್‌ಗಳು ಇಲ್ಲ"
+  }
+}
+

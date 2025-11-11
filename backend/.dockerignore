@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+.env
+.env.local
+uploads
+*.log
+.DS_Store
+.git
+.gitignore
+README.md
+DEPLOYMENT.md
+DEPLOY_QUICKSTART.md
+.ebextensions
+.elasticbeanstalk

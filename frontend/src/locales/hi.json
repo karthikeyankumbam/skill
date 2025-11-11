@@ -1,0 +1,68 @@
+{
+  "common": {
+    "home": "होम",
+    "login": "लॉगिन",
+    "logout": "लॉगआउट",
+    "register": "पंजीकरण",
+    "profile": "प्रोफ़ाइल",
+    "wallet": "वॉलेट",
+    "bookings": "बुकिंग",
+    "search": "खोजें",
+    "filter": "फ़िल्टर",
+    "submit": "सबमिट करें",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "edit": "संपादित करें",
+    "delete": "हटाएं",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफल"
+  },
+  "home": {
+    "title": "स्थानीय पेशेवर खोजें",
+    "subtitle": "अपनी सभी सेवा आवश्यकताओं के लिए सत्यापित पेशेवरों से जुड़ें",
+    "searchPlaceholder": "सेवाओं के लिए खोजें...",
+    "categories": "श्रेणियां",
+    "featured": "विशेष पेशेवर",
+    "topRated": "शीर्ष रेटेड",
+    "nearMe": "मेरे पास"
+  },
+  "auth": {
+    "phone": "फोन नंबर",
+    "otp": "OTP",
+    "sendOtp": "OTP भेजें",
+    "verifyOtp": "OTP सत्यापित करें",
+    "name": "नाम",
+    "email": "ईमेल",
+    "loginWithGoogle": "Google के साथ लॉगिन करें",
+    "loginWithApple": "Apple के साथ लॉगिन करें"
+  },
+  "professional": {
+    "unlockProfile": "प्रोफ़ाइल अनलॉक करें",
+    "bookNow": "अभी बुक करें",
+    "contactLocked": "संपर्क विवरण देखने के लिए लॉगिन करें और क्रेडिट से अनलॉक करें",
+    "rating": "रेटिंग",
+    "reviews": "समीक्षाएं",
+    "experience": "अनुभव",
+    "skills": "कौशल",
+    "services": "सेवाएं",
+    "pricing": "मूल्य निर्धारण"
+  },
+  "booking": {
+    "createBooking": "बुकिंग बनाएं",
+    "serviceDate": "सेवा तिथि",
+    "serviceTime": "सेवा समय",
+    "address": "पता",
+    "description": "विवरण",
+    "totalAmount": "कुल राशि",
+    "confirm": "बुकिंग की पुष्टि करें"
+  },
+  "wallet": {
+    "balance": "बैलेंस",
+    "credits": "क्रेडिट",
+    "addFunds": "फंड जोड़ें",
+    "transactions": "लेनदेन",
+    "insufficientCredits": "अपर्याप्त क्रेडिट"
+  }
+}
+

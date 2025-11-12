@@ -391,6 +391,32 @@ chmod +x ~/deploy-frontend.sh
 3. Check for errors in build output
 4. Verify `.env.production` file exists
 
+**Issue:** PostCSS config syntax error - `SyntaxError: Unexpected token 'export'`
+
+**Solution:**
+The `postcss.config.js` file should use CommonJS syntax. It should contain:
+```javascript
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+```
+Not ES module syntax (`export default`). This has been fixed in the repository.
+
+**Issue:** `terser not found` error during build
+
+**Solution:**
+The Vite config uses `esbuild` as the minifier (which is built-in) instead of `terser`. If you see this error, ensure `vite.config.js` has:
+```javascript
+build: {
+  minify: 'esbuild', // Not 'terser'
+  // ...
+}
+```
+This has been fixed in the repository. Pull latest changes: `git pull origin main`
+
 ### Nginx Configuration Errors
 
 **Issue:** `nginx -t` fails

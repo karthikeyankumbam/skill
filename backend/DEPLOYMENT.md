@@ -2,6 +2,8 @@
 
 This guide covers deploying the SkillLink backend to AWS using the cheapest options.
 
+> **📘 For a complete step-by-step deployment walkthrough with all details, see [DEPLOYMENT_COMPLETE.md](./DEPLOYMENT_COMPLETE.md)**
+
 ## 💰 AWS Cost Overview
 
 - **EC2 t2.micro**: FREE for 12 months (then ~$8.50/month)

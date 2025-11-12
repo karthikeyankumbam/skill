@@ -1,14 +1,22 @@
 import axios from 'axios'
 import { Capacitor } from '@capacitor/core'
 
-// Determine API base URL based on platform
+// Determine API base URL based on platform and environment
 const getBaseURL = () => {
-  // For native Android/iOS, use production URL or local IP
-  if (Capacitor.isNativePlatform()) {
-    // In production, use your deployed backend URL
-    return import.meta.env.VITE_API_URL || 'https://your-backend-url.com/api'
+  // If VITE_API_URL is explicitly set, use it (for production web or native)
+  if (import.meta.env.VITE_API_URL) {
+    // Ensure it ends with /api if not already
+    const apiUrl = import.meta.env.VITE_API_URL
+    return apiUrl.endsWith('/api') ? apiUrl : `${apiUrl}/api`
   }
-  // For web development, use proxy
+  
+  // For native Android/iOS platforms, use default production URL
+  if (Capacitor.isNativePlatform()) {
+    return 'https://your-backend-url.com/api' // Update this with your actual backend URL
+  }
+  
+  // For web (development and production), use relative path
+  // Nginx will proxy /api requests to backend
   return '/api'
 }
 
